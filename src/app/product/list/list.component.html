@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Lista de Produtos</h5>
+    <div class="list-group">
+      <a
+        class="list-group-item"
+        *ngFor="let product of products$ | async"
+        [routerLink]="['edit', product.id]"
+        routerLinkActive="active"
+      >
+        {{ product.name }} - {{ product.description }}
+      </a>
+    </div>
+  </div>
+</div>

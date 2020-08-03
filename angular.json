@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bravosul-test"
+    }
+  },
+  "defaultProject": "bravosul-test",
+  "cli": {
+    "analytics": false
+  }
 }
